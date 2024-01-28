@@ -1,13 +1,14 @@
 // Logo.js
 
 import React from 'react';
-import { Box } from '@chakra-ui/react';
-
+import { Box, Image } from '@chakra-ui/react';
+import Logotip from '../assets/logo.png'
 const Logo = () => {
   return (
-    <Box>
+    <Box w='100px' borderRadius='50px'>
       {/* Your logo content goes here */}
-      <img src="path/to/your/logo.png" alt="Logo" />
+
+      <Image borderRadius='50px' src={Logotip} alt='Dan Abramov' />
     </Box>
   );
 };
