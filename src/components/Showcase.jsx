@@ -27,7 +27,7 @@ const Showcase = ({ data, type }) => {
   //   }, []);
 
   return (
-    <Container maxW="1200px" textAlign="center" py="3rem" mt='2rem'>
+    <Container maxW="1200px" textAlign="center" py="3rem" mt="2rem">
       <Heading mt="0" fontSize="20px" my="20px" color="black">
         Type A {type} Name
       </Heading>
@@ -44,6 +44,7 @@ const Showcase = ({ data, type }) => {
       {/* Render your filtered data or showcase content here */}
 
       {data
+        .splice(0, 10)
         .filter((item) => {
           return search.toLowerCase() === " "
             ? item
